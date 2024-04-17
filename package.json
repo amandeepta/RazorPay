@@ -1,7 +1,6 @@
 {
   "scripts": {
     "start": "vite"
-    
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
@@ -9,6 +8,7 @@
     "tailwindcss": "^3.4.3"
   },
   "dependencies": {
+    "feather": "^0.0.5",
     "vite": "^5.2.9"
   }
 }
