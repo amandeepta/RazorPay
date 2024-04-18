@@ -6,6 +6,24 @@
     <link href="main.css" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
     <title>RazorPay</title>
+    <style>
+        .corefeaturesection{
+            background-size: 100% 100%;
+            padding-top: 12rem;
+            padding-bottom: 12rem;
+        }
+        .companiesList{
+            animation:10s infinite linear moveCompany;
+          }
+          @keyframes moveCompany {
+          0%{
+            top:0;
+          }
+          100%{
+            top:-50%;
+          }
+    }
+    </style>
 </head>
 <body>
     <nav class="bg-deepBlue">
@@ -499,10 +517,121 @@
           </div>
 
       </div>
+  </section>
 
+  <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[100px] -z-[100]">
 
+    <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-col md:flex-row">
+
+      <!--left part -->
+      <div class="flex flex-col justify-center w-full md:max-w-[calc(100%-500px)] sm:my-16">
+        <h2 class="font-mullish font-bold text-2xl text-deepBlueHead"
+        >Join the 50,00,000+ businesses using Razorpay
+        </h2>
+        <div class="w-6 h-1 bg-greenLight  my-4 mb-10"></div>
+        <p class="font-mullish opacity-80">We make it easier for you to focus on building great products while we work on simplifying your payments. Become one of us by joining thousands of our happy users and simplify the online payment experience for your customers.</p>
+        <p class="font-mullish mt-6 opacity-80">Focus on your business while we handle the complexities of payments for you.
+        </p>
+      </div>
+
+      <!--right part-->
+      <div class="h-[500px] w-[500px] relative overflow-y-hidden mx-auto">
+        <div style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
+        class="absolute w-full h-[150px] top-0 z-50">    </div>
+
+        <img src="./img/comanies.png" alt=""
+        class="absolute  h-auto object-cover companiesList">
+
+        <div style="background: linear-gradient(0deg, #f4f8ff, #fff0)"
+        class="absolute w-full h-[150px] bottom-0 z-50">
+
+        </div>
+      </div>
+
+    </div>
 
   </section>
+  
+  <section class="relative">
+
+    <div class="w-11/12 max-w-[1300px] mx-auto relative py-20">
+
+      <img src="./img/feature-section1-dottedrows.png" alt=""
+      class="absolute w-[200px] top-[8rem] left-[2rem] -z-10">
+
+      <h2 class="font-mullish font-extrabold text-2xl text-deepBlueHead text-center">An Experience
+        <br>People Love to Talk About</h2>
+      <div class="w-6 h-1 bg-greenLight mx-auto my-4"></div>
+
+
+    <!--left button -->
+    <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute left-0 top-1/2
+     flex justify-center items-center ">
+      <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center
+      mix-blend-multiply">
+        <i
+        data-feather="chevron-right"
+        class="stroke-[5px] w-6 h-6  text-gray-400 rotate-180"
+      ></i>
+      </div>
+    </button>
+
+        <!--right button -->
+    <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute right-0 top-1/2
+    flex justify-center items-center ">
+          <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center
+          mix-blend-multiply">
+            <i
+            data-feather="chevron-right"
+            class="stroke-[5px] w-6 h-6  text-gray-400"
+          ></i>
+          </div>
+    </button>
+
+
+    <!-- main content -->
+    <div class="flex flex-col xl:flex-row max-w-[960px] items-center mx-auto my-20 space-x-[10rem]">
+      <!--left image -->
+      <img src="./img/testimonial.jpg" alt=""
+      height="320px"
+      width="320px"
+      class="rounded-xl">
+
+      <!-- riught part-->
+      <div class="max-w-[400px] flex flex-col">
+        <img src="./img/quotes.svg" alt=""
+        width="35px"
+        height="40px"
+        class="-mb-2 xl:order-1">
+        <p class="font-mullish text-3xl font-extralight xl:order-1">
+          Readymade Closed Wallet Solution For Quick Refunds</p>
+        <a href="#" class="text-grayText italic underline xl:order-1">Learn More</a>
+        <p class="font-mullish font-extrabold text-2xl -order-1 xl:order-1">Lorem Ipsum</p>
+        <p class="font-mullish font-medium xl:order-1">CEO, XYZ Engineering Company</p>
+        <img src="./img/fake-company-logo.png" alt="" width="80px" height="40px" class=" xl:order-1">
+      </div>
+    </div>
+
+    <!-- 6 dot wala div-->
+    <div class="w-full flex flex-row mx-auto space-x-2 justify-center">
+      <!--dot 1-->
+      <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+
+      <div class="h-[10px] w-[10px] bg-lightBlue300 rounded-full"></div>
+
+      <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+
+      <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+
+      <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+
+      <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+
+    </div>
+  </div>
+
+  </section>
+  
 
   <script>
     feather.replace()
